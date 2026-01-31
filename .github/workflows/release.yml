@@ -36,6 +36,7 @@ jobs:
           echo "filename=blue-blocker-firefox-$(make version).zip" >> \
             "$GITHUB_OUTPUT"
       - name: publish firefox
+        if: ${{ secrets.MOZILLA_ADDONS_JWT_SECRET != '' }}
         uses: browser-actions/release-firefox-addon@v0.2.1
         # https://github.com/marketplace/actions/release-firefox-addon#inputs
         with:
@@ -79,6 +80,7 @@ jobs:
           echo "filename=blue-blocker-chrome-$(make version).zip" >> \
             "$GITHUB_OUTPUT"
       - name: publish chrome
+        if: ${{ secrets.CHROME_WEB_STORE_REFRESH_TOKEN != '' }}
         uses: mnao305/chrome-extension-upload@v5.0.0
         with:
           refresh-token: ${{ secrets.CHROME_WEB_STORE_REFRESH_TOKEN }}
