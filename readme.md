@@ -4,6 +4,13 @@
 	Blocks all Verified Twitter Blue users on twitter.com
 </p>
 
+## Why did I create this? | なぜつくったのか
+The resources available to humans are limited. I believe that people who can consistently work in languages other than their first are extremely rare.
+And let’s be real—reading English is kind of a hassle. So, well… might as well just build it ourselves, y’all.
+
+人間に使えるリソースは限られています。常に第一言語を以外を扱える人間なんで人類上でごくわずかだと思います。
+てか、英語読むの面倒くさいよね? じゃあ、作ったった方がええやん
+
 ## Usage
 
 Nothing! Just install and say goodbye to all the paid blue checkmarks!
